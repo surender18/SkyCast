@@ -1,0 +1,113 @@
+.weather{
+    margin: 30px ;
+    place-self: center;
+    padding: 60px;
+    border-radius: 12px;
+    /* background-image: linear-gradient(60deg,#273a6b,#5f19f7); */
+    /* background-image: url(https://stock.adobe.com/search?k=weather+background); */
+    background: rgb(195,98,34);
+background: linear-gradient(0deg, rgba(195,98,34,1) 0%, rgba(45,116,253,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease-out;
+ overflow: visible;
+
+}
+.weather:hover{
+   
+        border-color: #def415;
+        box-shadow: 0 4px 18px 0 rgba(16, 32, 205, 0.838);
+        transform: scale(1.02);
+
+       
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    /* background-color: red; */
+}
+.search-bar img{
+    width: 40px;
+    padding: 5px;
+    cursor: pointer;
+    background: #ebfffc;
+    border-radius: 5px;
+}
+.search-bar input{  
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #626262;
+    background: #ebfffc ;
+}
+.weather-icon{
+    width:120px;
+    margin: 30px 0;;
+}
+.weather-icon {
+    animation: sunshines 5s  infinite;
+  }
+  
+  @keyframes sunshines {
+    0% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+  
+    100% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+.temperature{
+    color: #fff;
+    font-size: 60px;
+    line-height: 1.2;
+}
+.location{
+ color: #fff;
+ font-size: 30px;
+}
+.weather-data{
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.weather-data .col{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size:20px ;
+}
+.weather-data .col span{
+    display: block;
+    font-size: 10px;
+}
+.weather-data .col img{
+    width: 30px;
+}
+
+h1{
+    color: black;
+    font-size: 72px;
+    text-align: center;
+    background:linear-gradient(to right,#d43bd6,#8f68ff,#1747c0,#8f68ff,#fc72ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+@keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
+    
+   }
